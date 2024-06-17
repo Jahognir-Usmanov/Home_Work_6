@@ -1,0 +1,197 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #318CE7;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #1E5799;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    float: left;
+    margin-left: 20px;
+    animation: fadeInLeft 1s ease;
+}
+
+.logo {
+    float: left;
+    margin-left: 20px;
+    animation: fadeInRight 1s ease;
+}
+
+.logo img {
+    width: 70px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8533;
+    animation: pulse 1s infinite alternate;
+}
+
+footer {
+    background-color: #1E5799;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+    animation: fadeInUp 1s ease;
+}
+#hero {
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease;
+}
+
+#hero h2 {
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Стили для кнопок */
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8533;
+    animation: pulse 1s infinite alternate;
+}
+
+.btn:active {
+    animation: clickEffect 0.3s ease;
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
